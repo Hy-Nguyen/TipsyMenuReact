@@ -3,6 +3,7 @@ import MenuItemSmall from "@/components/menu_item_small";
 import Navbar from "@/components/nav";
 import Header from "@/components/header";
 import Logo from "@/components/imageTest";
+import Chicken from "@/components/chicken";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar/>
       <div id="container" className="items-center justify-between px-8">
         <section id="kfc">
+          <Chicken/>
           <Header text={"Tipsy Chicken"} />
           <div className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 
