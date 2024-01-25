@@ -8,7 +8,8 @@ function Chicken(){
                 className="h-96 flex-none bg-cover rounded-t-xl 
                  text-center overflow-hidden" 
                 style={{backgroundImage: `url('/img/chicken3.jpg')`}}
-                title="">   
+                title=""
+                >   
             </div>
         </div>
     )
