@@ -17,16 +17,12 @@ export default function Home() {
       <Navbar/>
       <div id="container" className="items-center justify-between px-8">
         <section id="kfc">
-          <Chicken/>
+          
           <Header text={"Tipsy Chicken"} />
           <div className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto">
-            <MenuItemSmall/> 
-            <MenuItemSmall/> 
-            <MenuItemSmall/> 
-            <MenuItemSmall/> 
-            <MenuItemSmall/> 
+           <Chicken/>
           </div>
         </section>
         <section id="pre-game">
