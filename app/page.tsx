@@ -1,9 +1,9 @@
 import Image from "next/image";
-import MenuItemSmall from "@/components/menu_item_small";
 import Navbar from "@/components/nav";
 import Header from "@/components/header";
 import Logo from "@/components/imageTest";
 import Chicken from "@/components/chicken";
+import MenuItem from "@/components/menuitem";
 
 export default function Home() {
   return (
@@ -35,11 +35,8 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
+            <MenuItem />
+            <MenuItem />
           </div>
         </section>
         <section id="Party-On">
@@ -49,11 +46,8 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
+            <MenuItem />
+            <MenuItem />
           </div>
         </section>
         <section id="Drinks">
@@ -63,11 +57,8 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
-            <MenuItemSmall />
+            <MenuItem />
+            <MenuItem />
           </div>
         </section>
       </div>

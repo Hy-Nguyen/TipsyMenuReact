@@ -45,4 +45,5 @@ function MenuItemSmall() {
     </div>
   );
 }
+
 export default MenuItemSmall;
