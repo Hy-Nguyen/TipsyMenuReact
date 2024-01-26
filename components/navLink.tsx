@@ -22,7 +22,7 @@ function NavLink({
             section
           )?.offsetTop;
         window.scrollTo({
-          top: sectionPosition - 100,
+          top: (sectionPosition || 100) - 100,
           behavior: "smooth",
         });
       }}
