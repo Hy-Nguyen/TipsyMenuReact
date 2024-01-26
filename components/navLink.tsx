@@ -4,7 +4,7 @@ import React from "react";
 type NavProps = {
   section: string;
   title: string;
-  description: string;
+  description?: string;
 };
 
 function NavLink({
