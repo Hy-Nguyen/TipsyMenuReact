@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,8 +18,12 @@
   }
 }
 
+li {
+  margin-top: 2px;
+  margin-bottom: 2px  ;
+}
 .ptserif {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 body {
   color: rgb(var(--foreground-rgb));
