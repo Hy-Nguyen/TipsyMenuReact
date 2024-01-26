@@ -183,16 +183,80 @@ async function populateCollection() {
         categoryName: "drinks",
         sub_category: [
           {
-            sub: "",
+            sub: "Beer & Soju",
+            items: [
+              {
+                name: "Cass (500ml)",
+                price: 7.95,
+              },
+              {
+                name: "Modelo // Sapporo",
+                price: 4.95,
+              },
+              {
+                name: "Soju ",
+                price: 12.95,
+                flavors:
+                  "Classic, lychee, mango, peach, pineapple, strawberry, yogurt.",
+              },
+              {
+                name: "Soju Bomb",
+                price: 17.95,
+                description:
+                  "Cass beer + your choice of soju bottle!",
+              },
+            ],
           },
           {
-            sub: "",
+            sub: "Soft Drinks",
+            item: {
+              name: "Coke, Diet Coke, Sprite, Arizona Sweet Tea",
+              price: 2.5,
+            },
           },
           {
-            sub: "",
+            sub: "cocktails",
+            items: [
+              {
+                name: "Above the Clouds ",
+                price: 13.95,
+                ingredients:
+                  "Soju, yuzu, rose flower, egg white foam, lychee, rose petal garnish.",
+              },
+              {
+                name: "Day Booster ",
+                price: 12.95,
+                price: 13.95,
+                ingredients:
+                  "Soju, rum, yuzu, strawberry jam, ginger beer, mint garnish.",
+              },
+              {
+                name: "Day Break ",
+                price: 13.95,
+                ingredients:
+                  "Soju, tangerine juice, grenadine, dried orange garnish:",
+              },
+              {
+                name: "Seasonal Cocktal ",
+                price: 13.95,
+                ingredients:
+                  "Ask our server team for details!",
+              },
+            ],
           },
           {
-            sub: "",
+            sub: "Pitchers",
+            milkyway: {
+              name: "Milky Way Pitcher",
+              ingredients: "Cass, Milkis",
+              price: 17.95,
+            },
+            soju: {
+              name: "Soju Pitcher",
+              ingredients:
+                "The party classic of Sprite, Yakult and your choice of Soju",
+              price: 22.95,
+            },
           },
         ],
       },
