@@ -3,7 +3,8 @@ import Navbar from "@/components/nav";
 import Header from "@/components/header";
 import Logo from "@/components/imageTest";
 import Chicken from "@/components/chicken";
-import MenuItem from "@/components/menuitem";
+import PreGame from "@/components/pregame";
+import PartyOn from "@/components/partyon";
 
 export default function Home() {
   return (
@@ -35,8 +36,8 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItem />
-            <MenuItem />
+            <PreGame/>
+            
           </div>
         </section>
         <section id="Party-On">
@@ -46,8 +47,7 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItem />
-            <MenuItem />
+            <PartyOn/>
           </div>
         </section>
         <section id="Drinks">
@@ -57,8 +57,7 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <MenuItem />
-            <MenuItem />
+            
           </div>
         </section>
       </div>

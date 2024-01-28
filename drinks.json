@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Cass (500ml)",
+    "price": 7.95,
+    "description": "",
+    "category": "Beer & Soju"
+  },
+  {
+    "name": "Modelo // Sapporo",
+    "price": 4.95,
+    "description": "",
+    "category": "Beer & Soju"
+  },
+  {
+    "name": "Soju ",
+    "price": 12.95,
+    "description": "Classic, lychee, mango, peach, pineapple, strawberry, yogurt.",
+    "category": "Beer & Soju"
+  },
+  {
+    "name": "Soju Bomb",
+    "price": 17.95,
+    "description": "Cass beer + your choice of soju bottle!",
+    "category": "Beer & Soju"
+  },
+  {
+    "name": "Soda",
+    "price": 2.5,
+    "description": "Coke, Diet Coke, Sprite, Arizona Sweet Tea",
+    "category": "Soft Drinks"
+  },
+  {
+    "name": "Above the Clouds ",
+    "price": 13.95,
+    "description": "Soju, yuzu, rose flower, egg white foam, lychee, rose petal garnish.",
+    "category": "cocktails"
+  },
+  {
+    "name": "Day Booster ",
+    "price": 13.95,
+    "description": "Soju, rum, yuzu, strawberry jam, ginger beer, mint garnish.",
+    "category": "cocktails"
+  },
+  {
+    "name": "Day Break ",
+    "price": 13.95,
+    "description": "Soju, yuzu, rose flower, egg white foam, lychee, rose petal garnish.",
+    "category": "cocktails"
+  },
+  {
+    "name": "Seasonal Cocktal ",
+    "price": 13.95,
+    "description": "Soju, yuzu, rose flower, egg white foam, lychee, rose petal garnish.",
+    "category": "cocktails"
+  },
+  {
+    "name": "Milky Way Pitcher",
+    "price": 17.95,
+    "description": "Cass and Milkis",
+    "category": "pitchers"
+  },
+  {
+    "name": "Soju Pitcher",
+    "price": 22.95,
+    "description": "The party classic of Sprite, Yakult and your choice of Soju",
+    "category": "pitchers"
+  }
+]

@@ -1,34 +1,40 @@
 import React from "react";
-
 import Header from "./header";
+import { getChicken } from "@/lib/middleware";
 
-function Pieces() {
+export default async function Pieces() {
+  const divRowClass = "w-1/3 px-4 py-1";
+  const chicken = await getChicken();
+
   return (
     <>
+      <div></div>
       <Header text="Quantity" />
-      <div className="grid grid-cols-2 text-center">
-        <div>
-          <h1 className="my-4">Size</h1>
-          <ul className="">
-            <li>7 Pieces</li>
-            <li>14 Pieces</li>
-            <li>21 Pieces</li>
-          </ul>
-        </div>
-        <div>
-          <h1 className="my-4">Price</h1>
-          <ul>
-            <li>$14.25</li>
-            <li>$26.25</li>
-            <li>$39.25</li>
-          </ul>
+      <div className="flex text-center">
+        <div className={divRowClass}>Size</div>
+        <div className={divRowClass}>Bone In</div>
+        <div className={divRowClass}>
+          Boneless
         </div>
       </div>
-      <div className="text-center mt-8">
-        <p>BONELESS: $00.50 Extra</p>
-      </div>
+      {chicken.bone_in.map(
+        (bone_in_item: any, i: number) => {
+          const boneless = chicken.boneless[i];
+          return (
+          <div className="flex text-center" key={boneless._id}>
+            <div className={divRowClass}>
+              {boneless.quantity} pieces
+            </div>
+            <div className={divRowClass}>
+              ${bone_in_item.price}
+            </div>
+            <div className={divRowClass}>
+              ${boneless.price}
+            </div>
+          </div>
+          )
+        }
+      )}
     </>
   );
 }
-
-export default Pieces;

@@ -1,35 +1,25 @@
-import React from "react";
+import React, { cache } from "react";
 import Header from "./header";
 import Flavor from "./flavor";
+import { getSauces } from "@/lib/middleware";
 
-function Sauces() {
+export default async function Sauces() {
+  const sauceList = await getSauces();
+
   return (
     <>
       <Header text="Sauces" />
       <div className=" mx-4">
-        <Flavor
-          flavor="Original"
-          description="Crispy, savory & classic. Can't go wrong!"
-          spacer={true}
-        />
-        <Flavor
-          flavor="Soy & Garlic"
-          description="Garlic-y & savory. Hits the spot!"
-          spacer={true}
-        />
-        <Flavor
-          flavor="Sweet & Spicy"
-          description="Classic sweet & spicy from our signature sauce."
-          spacer={true}
-        />
-        <Flavor
-          flavor="Sweet Fish Sauce Glaze"
-          description="A tangy and savory glaze on a perfect crunch. Feeling adventurous?"
-          spacer={false}
-        />
+        {sauceList.map((s: any) => (
+          <Flavor
+            key={s._id}
+            flavor={s.name}
+            description={s.description}
+            spacer={true}
+          />
+        ))}
       </div>
     </>
   );
+  return <></>;
 }
-
-export default Sauces;
