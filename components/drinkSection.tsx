@@ -9,7 +9,8 @@ export default async function DrinkSection({
   title: string;
   category: string;
 }) {
-  const drinkSec = await getDrinks(
+  let drinkSec: any;
+  drinkSec = await getDrinks(
     category.toLowerCase()
   );
   return (
