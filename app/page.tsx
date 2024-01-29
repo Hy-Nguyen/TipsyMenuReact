@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Navbar from "@/components/nav";
 import Header from "@/components/header";
 import Logo from "@/components/imageTest";
 import Chicken from "@/components/chicken";
 import PreGame from "@/components/pregame";
 import PartyOn from "@/components/partyon";
+import Drinks from "@/components/drinks";
 
 export default function Home() {
   return (
@@ -36,8 +36,7 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <PreGame/>
-            
+            <PreGame />
           </div>
         </section>
         <section id="Party-On">
@@ -47,17 +46,16 @@ export default function Home() {
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            <PartyOn/>
+            <PartyOn />
           </div>
         </section>
         <section id="Drinks">
-          <Header text={"Drinks"} />
           <div
             className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 
                         lg:grid lg:grid-cols-3 lg:max-w-screen-xl lg:m-auto"
           >
-            
+            <Drinks />
           </div>
         </section>
       </div>

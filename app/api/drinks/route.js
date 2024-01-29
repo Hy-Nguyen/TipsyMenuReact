@@ -1,5 +1,5 @@
 import connectMongoDB from "@/lib/mongo";
-import Drink from "@/models/drinks";
+import Drinks from "@/models/drinks";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -15,7 +15,7 @@ export async function POST(request) {
           description,
           category,
         }) => {
-          return Drink.create({
+          return Drinks.create({
             name,
             price,
             description,
@@ -27,7 +27,7 @@ export async function POST(request) {
   } else {
     const { name, price, description, category } =
       requestBody;
-    await Drink.create({
+    await Drinks.create({
       name,
       price,
       description,
@@ -40,9 +40,17 @@ export async function POST(request) {
     { status: 201 }
   );
 }
-
-export async function GET() {
+export async function GET(req, res) {
   await connectMongoDB();
-  const drink = await Drink.find();
-  return NextResponse.json(drink);
+  const search = new URL(req.url).searchParams;
+  const category = search.keys().next().value;
+  let drinks;
+  if (category) {
+    drinks = await Drinks.find({
+      category: category,
+    });
+  } else {
+    drinks = await Drinks.find();
+  }
+  return NextResponse.json(drinks);
 }

@@ -28,15 +28,3 @@ export async function GET() {
   return NextResponse.json(sauce);
 }
 
-export async function DELETE(request) {
-  const id =
-    request.nextUrl.searchParams.get("id");
-  await connectMongoDB();
-  await Sauce.findByIdAndDelete(id);
-  return NextResponse.json(
-    {
-      msg: "DELETED HAHAHA",
-    },
-    { status: 200 }
-  );
-}

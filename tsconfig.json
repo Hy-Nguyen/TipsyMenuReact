@@ -28,6 +28,6 @@
     ".next/types/**/*.ts",
     "app/api/connectMongo.tsx",
     "app/api/sauce/route.js"
-  ],
+, "app/api/drinks/[category]/route.ts"  ],
   "exclude": ["node_modules"]
 }

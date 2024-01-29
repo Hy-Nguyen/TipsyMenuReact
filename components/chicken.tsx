@@ -2,7 +2,7 @@ import React from "react";
 import Sauces from "./sauces";
 import Pieces from "./pieces";
 
-function Chicken() {
+export default function Chicken() {
   return (
     <div className="max-w w-full flex flex-col justify-center py-2">
       <div
@@ -20,4 +20,3 @@ function Chicken() {
     </div>
   );
 }
-export default Chicken;

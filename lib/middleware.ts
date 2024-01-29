@@ -64,13 +64,14 @@ export async function getPartyOn() {
     console.log(error);
   }
 }
-export async function getDrinks() {
+export async function getDrinks(
+  category: string
+) {
   try {
-    const res = await fetch(
-      "http://localhost:3000/api/drinks",
-      { cache: "no-store" }
-    );
-
+    const url = `http://localhost:3000/api/drinks?${category}`;
+    const res = await fetch(url, {
+      cache: "no-store",
+    });
     const drinks = await res.json();
     if (!res.ok) {
       throw new Error("Failed to load");
