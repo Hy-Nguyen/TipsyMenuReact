@@ -8,6 +8,7 @@ if (mongoose.models.Sauce) {
   const sauceSchema = new Schema({
     name: String,
     description: String,
+    spacer: Boolean,
   });
 
   Sauce = mongoose.model("Sauce", sauceSchema);

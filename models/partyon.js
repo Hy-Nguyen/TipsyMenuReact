@@ -6,6 +6,7 @@ if (mongoose.models.PartyOn) {
   PartyOn = mongoose.model("PartyOn");
 } else {
   const PartyOnSchema = new Schema({
+    url: String,
     name: String,
     price: Number,
     description: String,

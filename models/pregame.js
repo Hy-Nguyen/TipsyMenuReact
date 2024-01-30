@@ -6,6 +6,7 @@ if (mongoose.models.Pregame) {
   Pregame = mongoose.model("Pregame");
 } else {
   const pregameSchema = new Schema({
+    url: String,
     name: String,
     price: Number,
     description: String,

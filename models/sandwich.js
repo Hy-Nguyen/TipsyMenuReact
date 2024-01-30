@@ -6,6 +6,7 @@ if (mongoose.models.Sandwich) {
   Sandwich = mongoose.model("sandwiches");
 } else {
   const SandwichSchema = new Schema({
+    url: String,
     name: String,
     price: Number,
     description: String,
