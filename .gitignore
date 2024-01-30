@@ -37,4 +37,5 @@ next-env.d.ts
 
 # local api's
 /app/api/*
-.mjs
+*.mjs
+*/tempCodeRunnerFile.js
