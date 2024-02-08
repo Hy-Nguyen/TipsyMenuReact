@@ -15,7 +15,7 @@ export default async function Sauces() {
             key={s._id}
             flavor={s.name}
             description={s.description}
-            spacer={true}
+            spacer={s.spacer}
           />
         ))}
       </div>

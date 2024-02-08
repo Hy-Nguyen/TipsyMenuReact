@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+export default {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3-media0.fl.yelpcdn.com',  
+        port: '',
+      },
+      
+    ],
+  },
+};
+
+

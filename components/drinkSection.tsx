@@ -15,7 +15,7 @@ export default async function DrinkSection({
   );
   return (
     <>
-      <Header text={title} />
+      <Header text={title} images={false} />
 
       {drinkSec.map((drink: any) => (
         <MenuItem
@@ -23,6 +23,7 @@ export default async function DrinkSection({
           title={drink.name}
           description={drink.description}
           price={drink.price}
+          url=""
         />
       ))}
     </>

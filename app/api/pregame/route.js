@@ -9,11 +9,17 @@ export async function POST(request) {
   if (Array.isArray(requestBody)) {
     await Promise.all(
       requestBody.map(
-        async ({ name, price, description }) => {
+        async ({
+          name,
+          price,
+          description,
+          url,
+        }) => {
           return Pregame.create({
             name,
             price,
             description,
+            url,
           });
         }
       )
@@ -25,6 +31,7 @@ export async function POST(request) {
       name,
       price,
       description,
+      url,
     });
   }
 

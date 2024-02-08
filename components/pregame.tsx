@@ -12,6 +12,7 @@ export default async function PreGame() {
           title={p.name}
           description={p.description}
           price={p.price}
+          url={p.url}
         />
       ))}
     </>

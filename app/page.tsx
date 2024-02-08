@@ -20,7 +20,10 @@ export default function Home() {
         className="items-center justify-between px-8"
       >
         <section id="kfc">
-          <Header text={"Tipsy Chicken"} />
+          <Header
+            text={"Tipsy Chicken"}
+            images={false}
+          />
           <div
             className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 
@@ -30,7 +33,10 @@ export default function Home() {
           </div>
         </section>
         <section id="pre-game">
-          <Header text={"Pre-Game"} />
+          <Header
+            text={"Pre-Game"}
+            images={true}
+          />
           <div
             className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 
@@ -40,7 +46,10 @@ export default function Home() {
           </div>
         </section>
         <section id="Party-On">
-          <Header text={"Party-On"} />
+          <Header
+            text={"Party-On"}
+            images={true}
+          />
           <div
             className="min-w-64 max-w-screen 
                         md:grid md:grid-cols-2 

@@ -5,27 +5,32 @@
       {
         "name": "Corn Cheese",
         "price": 12.95,
-        "description": "Melted mozzarella cheese in sizzling corn topped with green onions. It's corn!"
+        "description": "Melted mozzarella cheese in sizzling corn topped with green onions. It's corn!",
+        "url": ""
       },
       {
         "name": "Fried Mandu",
         "price": 8.95,
-        "description": "7 pieces - Mixture of pork and vegetable fillings, fried to perfection. Paired with savory soy garlic sauce."
+        "description": "7 pieces - Mixture of pork and vegetable fillings, fried to perfection. Paired with savory soy garlic sauce.",
+        "url": ""
       },
       {
         "name": "Rice Cake & Sausage Skewers",
         "price": 9.95,
-        "description": "Rice cakes & Korean sausages with sweet & spicy glaze."
+        "description": "Rice cakes & Korean sausages with sweet & spicy glaze.",
+        "url": ""
       },
       {
         "name": "Sautéed Corn with Mini Shrimps",
         "price": 11.95,
-        "description": ""
+        "description": "",
+        "url": ""
       },
       {
         "name": "Tipsy Fries ",
         "price": 8.95,
-        "description": "Cripsy French fries served with our tipsy sauce or truffle garlic mayo."
+        "description": "Cripsy French fries served with our tipsy sauce or truffle garlic mayo.",
+        "url": ""
       }
     ]
   },

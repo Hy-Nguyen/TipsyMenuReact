@@ -4,35 +4,28 @@ type ItemProps = {
   title: string;
   description: string;
   price: number;
+  url: string;
 };
 
 function MenuItem({
   title,
   description,
   price,
+  url,
 }: ItemProps) {
-  let url: string = "";
-
   return (
     <>
-      <div className="max-w w-full grid grid-cols-3 justify-center py-2">
+      <div className="max-w w-full flex flex-col justify-center py-2">
         {url ? (
           <>
-            <div
-              className="flex-none bg-cover rounded-xl 
-                     text-center overflow-hidden col-span-1"
-              style={{
-                backgroundImage: `url('/img/${url}')`,
-              }}
-              title=""
-            ></div>
+            
 
             <div
               className=" 
                   lg:border-l-0 lg:border-t
                   rounded-r-xl py-4 px-2  
                   justify-between leading-normal
-                  col-span-2"
+                  "
             >
               <div className="mb-2 ml-2 ">
                 <div className="items-center flex flex-row  text-md mb-2 justify-between">
